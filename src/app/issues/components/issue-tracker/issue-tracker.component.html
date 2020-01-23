@@ -1,0 +1,5 @@
+<mat-card *ngFor="let issue of issues">
+  <mat-card-title>{{issue.name}}</mat-card-title>
+  <mat-card-content>{{issue.count}}</mat-card-content>
+  <button (click)="increment(issue.id)">Increment</button>
+</mat-card>
