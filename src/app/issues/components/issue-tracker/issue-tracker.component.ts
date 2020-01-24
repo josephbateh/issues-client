@@ -25,6 +25,10 @@ export class IssueTrackerComponent implements OnInit {
   }
 
   increment(id: string) {
-    this.service.incrementIssue(id).subscribe((data: Issue) => console.log(data.count));
+    this.service.incrementIssue(id).subscribe((data: Issue) => this.issues.map(x => {
+      if (x.id === id) {
+        x.count = data.count;
+      }
+    }));
   }
 }
