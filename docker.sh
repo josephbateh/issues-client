@@ -1,4 +1,3 @@
 #!/bin/sh
 
-docker images build . issues-client
-docker images tag issues-client:latest
+docker image build -t issues-client:latest .
