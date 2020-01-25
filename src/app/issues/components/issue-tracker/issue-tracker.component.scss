@@ -1,0 +1,16 @@
+div {
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+mat-card {
+  min-width: 9rem;
+  outline-width: thin;
+  outline-color: black;
+  margin-bottom: 5px;
+}
